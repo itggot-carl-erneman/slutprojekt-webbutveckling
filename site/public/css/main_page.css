@@ -1,0 +1,12 @@
+@media only screen and (max-device-width: 361px) {
+  body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif; }
+
+  .container {
+    width: 80vw;
+    height: 80vh;
+    background-color: whitesmoke; } }
