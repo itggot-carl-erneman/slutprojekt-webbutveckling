@@ -4,42 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main_page.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <title>Frölunda Taekwondo</title>
+    <link rel="stylesheet" href="css/main_page.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <div class="container">
         <header>
-            <i class="material-icons menu_logo_open" scronclick="toggleMenu()">menu</i>
-            <a href="#" class="logo">
-                <img src="img/Logga.png" alt="Logo for Frölunda Taekwondo">
-            </a>
+            <div class="new_container">
+                <i class="material-icons menu_logo_open" onclick="toggleMenu()">menu</i>
+                <a href="index.html" class="logo">
+                    <img src="img/Logga.png" alt="Logo for Frölunda Taekwondo">
+                </a>
+            </div>
+                
         </header>
 
+           
         <%= yield %>
 
-        <footer>
-            <p>Sidan är skapad av calle</p>
-        </footer>
+            <%# <footer></footer> %>
+
+
 
         <div class="menu">
             <i class="material-icons menu_logo_close" onclick="toggleMenu()">close</i>
             <div>
                 <ul>
                     <li class="loginB">
-                        <a class="transparent_btn red" href="logga_in.html">Logga in</a>
+                        <a class="transparent_btn red" href="logga_in.html">Logga in         </a>
                     </li>
                     <li class="omB">
-                        <a class="transparent_btn red" href="om_oss.html">Om oss</a>
+                        <a class="transparent_btn red" href="om_oss.html">Om oss           </a>
+                    </li>
+                    <li class="omTaekwondoB">
+                        <a class="transparent_btn red" href="om_tkd.html">Om Taekwondo </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/script.js" ></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDp7tmWRkiq7G0X-ApZmuXVKfKwORrpU4&callback=initMap">
+    </script>
 </body>
 </html>
